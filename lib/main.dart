@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/row-and-column.dart';
+import 'package:my_first_flutter/position-stack.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyRowAndColumn(),
+      home: MyStackPosition(),
     );
   }
 }

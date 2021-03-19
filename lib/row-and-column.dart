@@ -5,51 +5,50 @@ class MyRowAndColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        height: 500,
+        color: Colors.white,
         child: Column(
-      children: <Widget>[
-        Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           verticalDirection: VerticalDirection.down,
           textDirection: TextDirection.ltr,
           children: <Widget>[
-            MyButton(
-              text: 'Button1',
-              routepath: {},
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                MyButton(
+                  text: 'Button1',
+                  routepath: {},
+                ),
+                MyButton(
+                  text: 'Button2',
+                  routepath: {},
+                ),
+                MyButton(
+                  text: 'Button3',
+                  routepath: {},
+                ),
+              ],
             ),
-            MyButton(
-              text: 'Button2',
-              routepath: {},
-            ),
-            MyButton(
-              text: 'Button3',
-              routepath: {},
-            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                MyButton(
+                  text: 'Button4',
+                  routepath: {},
+                ),
+                MyButton(
+                  text: 'Button5',
+                  routepath: {},
+                ),
+                MyButton(
+                  text: 'Button6',
+                  routepath: {},
+                ),
+              ],
+            )
           ],
-        ),
-        Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          verticalDirection: VerticalDirection.down,
-          textDirection: TextDirection.ltr,
-          children: <Widget>[
-            MyButton(
-              text: 'Button4',
-              routepath: {},
-            ),
-            MyButton(
-              text: 'Button5',
-              routepath: {},
-            ),
-            MyButton(
-              text: 'Button6',
-              routepath: {},
-            ),
-          ],
-        )
-      ],
-    ));
+        ));
   }
 }
